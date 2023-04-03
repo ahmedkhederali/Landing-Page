@@ -1,24 +1,30 @@
 import logo from './logo.svg';
-import './App.css';
+
+import WithSubnavigation from './Components/Navbar/Navbar';
+import LargeWithAppLinksAndSocial from './Components/Footer/Footer';
+import WithSpeechBubbles from './Components/Testmonial/Testmonial';
+import ThreeTierPricing from './Components/Pricing/Pricing';
+import BasicStatistics from './Components/Statistical/Statical';
+import ContactFormWithSocialButtons from './Components/Contact/Contact';
+import SimpleThreeColumns from './Components/Feature/Feature';
+import { Box, Center } from '@chakra-ui/react';
+import SplitWithImage from './Components/Content/Content';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     <WithSubnavigation/>
+     <SplitWithImage/>
+     <SimpleThreeColumns/>
+
+
+     <ThreeTierPricing/>
+     <WithSpeechBubbles/>
+     <BasicStatistics />
+     <ContactFormWithSocialButtons/>
+     <LargeWithAppLinksAndSocial/>
+
+    </>
   );
 }
 
